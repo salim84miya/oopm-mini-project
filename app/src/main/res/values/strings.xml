@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">kabootar</string>
+    <string name="specialActivity_page">CUSTOM REQUEST</string>
+    <string name="standardActivity_page">STANDARD REQUEST</string>
+</resources>
