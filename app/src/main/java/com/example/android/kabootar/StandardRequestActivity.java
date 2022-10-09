@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -15,7 +14,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class StandardActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class StandardRequestActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     private Spinner branchNameSpinner;
     private Spinner batchSpinner;
@@ -29,7 +28,7 @@ public class StandardActivity extends AppCompatActivity implements AdapterView.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_standard);
+        setContentView(R.layout.request_page);
 
         branchNameSpinner=findViewById(R.id.branch_spinner);
         branchNameSpinner.setOnItemSelectedListener(this);
@@ -73,7 +72,7 @@ public class StandardActivity extends AppCompatActivity implements AdapterView.O
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
                 }else {
-                    Toast.makeText(StandardActivity.this, "There is no application that support this action",
+                    Toast.makeText(StandardRequestActivity.this, "There is no application that support this action",
                             Toast.LENGTH_SHORT).show();
                 }
             }

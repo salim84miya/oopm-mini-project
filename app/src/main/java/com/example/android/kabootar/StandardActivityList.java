@@ -24,7 +24,7 @@ public class StandardActivityList extends AppCompatActivity {
         });
     }
     public void standardList(){
-        Intent intent = new Intent(this,StandardActivity.class);
+        Intent intent = new Intent(this, StandardRequestActivity.class);
         startActivity(intent);
     }
 
