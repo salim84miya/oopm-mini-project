@@ -9,13 +9,25 @@
 
     <EditText
         android:layout_weight="1"
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/edit_text_person_name"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
         android:layout_margin="16dp" />
+    <Spinner
+        android:id="@+id/branch_spinner"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+    <Spinner
+        android:id="@+id/branch_spinner2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp" />
+
     <TextView
         android:id="@+id/description"
         android:layout_weight="113"
