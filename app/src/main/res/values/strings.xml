@@ -2,4 +2,6 @@
     <string name="app_name">kabootar</string>
     <string name="specialActivity_page">CUSTOM REQUEST</string>
     <string name="standardActivity_page">STANDARD REQUEST</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

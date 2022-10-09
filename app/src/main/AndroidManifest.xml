@@ -14,13 +14,19 @@
         android:theme="@style/Theme.Kabootar"
         tools:targetApi="31">
         <activity
+            android:name=".SpecialRequestPage"
+            android:exported="false" />
+        <activity
+            android:name=".StandardActivityList"
+            android:exported="false" />
+        <activity
             android:name=".SpecialActivity"
             android:exported="false"
-            android:label="@string/specialActivity_page"/>
+            android:label="@string/specialActivity_page" />
         <activity
-            android:name=".StandardActivity"
+            android:name=".StandardRequestActivity"
             android:exported="false"
-            android:label="@string/standardActivity_page"/>
+            android:label="@string/standardActivity_page" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

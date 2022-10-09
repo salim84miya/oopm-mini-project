@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="batch_no">
+        <item>batch no</item>
+        <item>2021–2022</item>
+        <item>2020–2021</item>
+    </string-array>
+</resources>

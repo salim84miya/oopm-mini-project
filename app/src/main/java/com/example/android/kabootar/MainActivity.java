@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
    public void standard(){
-        Intent intent = new Intent(this,StandardActivity.class);
+        Intent intent = new Intent(this,StandardActivityList.class);
         startActivity(intent);
    }
     public void special(){
