@@ -1,43 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".SpecialActivity"
+android:orientation="vertical">
+android:layout_height="wrap_content"
+tools:context=".SpecialActivity" >
+
+<EditText
+    android:layout_weight="1"
+    android:id="@+id/editTextTextPersonName"
+
+<com.google.android.material.tabs.TabLayout
+    android:id="@+id/layout_tab"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:ems="10"
+    android:hint="Name"
+    android:inputType="textPersonName"
+    android:layout_margin="16dp" />
+
+<TextView
+    android:id="@+id/description"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.tabs.TabItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AIML" />
+
+    <com.google.android.material.tabs.TabItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="com" />
+
+    <com.google.android.material.tabs.TabItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="iot" />
+
+    <com.google.android.material.tabs.TabItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="elec" />
+
+</com.google.android.material.tabs.TabLayout>
+
+<androidx.viewpager2.widget.ViewPager2
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".SpecialActivity">
+    android:layout_margin="16dp"
+    android:layout_weight="113"
+    android:text="Description" />
+
+<Button
+    android:id="@+id/submit_button"
+    android:layout_width="121dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/button"
+    android:onClick="submit"
+    android:text="submit" />
+</LinearLayout>
+    android:layout_height="match_parent"
+    android:id="@+id/view_pager"
+    android:layout_below="@+id/layout_tab" />
 
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/layout_tab"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="AIML" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="com" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="iot" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="elec" />
-
-    </com.google.android.material.tabs.TabLayout>
-
-    <androidx.viewpager2.widget.ViewPager2
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/view_pager"
-        android:layout_below="@+id/layout_tab" />
-
-
-</RelativeLayout>
+    </RelativeLayout>
