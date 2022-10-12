@@ -53,11 +53,11 @@
             android:focusable="true" />
 
         <TextView
-            android:id="@+id/layout2"
+            android:id="@+id/lost_id_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Layout 2"
+            android:text="Request for new id"
             android:layout_margin="16dp"
             android:padding="15dp"
             android:textAllCaps="true"

@@ -17,14 +17,15 @@ import android.widget.Toast;
 import java.text.DateFormat;
 import java.util.Calendar;
 
-public class StandardRequestActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class StandardRequestActivity2 extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
     private Spinner branchNameSpinner;
-    private Spinner batchSpinner;
-    String branch,batch;
+    String branch;
     String name;
+    String rollno;
     String date;
     EditText inputName;
+    EditText inputRollNo;
     String letter;
     Button submit;
     String displaymessage;
@@ -34,11 +35,12 @@ public class StandardRequestActivity extends AppCompatActivity implements Adapte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.request_page);
 
-        View view = findViewById(R.id.edit_text_roll_no);
+        View view = findViewById(R.id.branch_spinner2);
         view.setVisibility(View.GONE);
+
         Calendar calendar = Calendar.getInstance();
         String CurrentDate = DateFormat.getDateInstance(DateFormat.MEDIUM).format(calendar.getTime());
-           date=CurrentDate;
+        date=CurrentDate;
         branchNameSpinner=findViewById(R.id.branch_spinner);
         branchNameSpinner.setOnItemSelectedListener(this);
         String []branchName = getResources().getStringArray(R.array.branch_name);
@@ -46,15 +48,6 @@ public class StandardRequestActivity extends AppCompatActivity implements Adapte
         // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         branchNameSpinner.setAdapter(adapter);
-
-        batchSpinner=findViewById(R.id.branch_spinner2);
-        batchSpinner.setOnItemSelectedListener(this);
-        String []batchNo = getResources().getStringArray(R.array.batch_no);
-        ArrayAdapter adapter1 = new ArrayAdapter(this, android.R.layout.simple_spinner_item,batchNo);
-        // Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        batchSpinner.setAdapter(adapter1);
-
 
     }
     public void display(){
@@ -81,7 +74,7 @@ public class StandardRequestActivity extends AppCompatActivity implements Adapte
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
                 }else {
-                    Toast.makeText(StandardRequestActivity.this, "There is no application that support this action",
+                    Toast.makeText(StandardRequestActivity2.this, "There is no application that support this action",
                             Toast.LENGTH_SHORT).show();
                 }
             }
@@ -92,6 +85,9 @@ public class StandardRequestActivity extends AppCompatActivity implements Adapte
         inputName = (EditText) findViewById(R.id.edit_text_person_name);
         name= inputName.getText().toString();
 
+        inputRollNo = (EditText) findViewById(R.id.edit_text_roll_no);
+        rollno= inputRollNo.getText().toString();
+
         letter = "To,\n"+
                 "The Principal ,\n"+
                 "SMT INDIRA GANDHI COLLEGE OF ENGINEERING,\n"+
@@ -99,11 +95,12 @@ public class StandardRequestActivity extends AppCompatActivity implements Adapte
                 "Maharashtra 400701\n"+
                 "Date:"+date+"\n"+
 
-                "\nSubject: Request for College leaving certificate.\n"+
+                "\n\nSubject: Identity card lost application.\n"+
 
                 "\nRespected Sir / Madam,\n"+
-                "               With due respect, I would like to state that, I am "+name +" and was a student of your college batch number "+batch+". I was a student of   "+branch+". I cleared with good marks cleared all my semester examinations.\n"+
-                "               As I’ve to get myself enrolled in another institute for further education I need to submit a college leaving certificate issued by you in my name. In order to prevent harm to my further studies, I need to deposit the certificate as soon as possible. Therefore, I request you to kindly issue a college leaving certificate at the earliest.\n"+
+                "               Most respectfully, I would like to state that my name is "+name +" and I am a student of "+branch+" department of your reputed college having roll number " +rollno+"."+
+                "I am most apologetically writing this letter to inform you that my college ID (Identity) card has been lost and is missing for last couple of days. I have tried searching all places but failed to find it.\n"+
+                "               Therefore, I request you to kindly issue me with a duplicate Identity card at the earliest. I shall be highly obliged for your kind support. I am ready to pay all applicable charges (if any).\n"+
 
                 "\nThanking you,\n"+
                 "Yours Truly,\n"+
@@ -119,14 +116,11 @@ public class StandardRequestActivity extends AppCompatActivity implements Adapte
             String valueFromSpinner = parent.getItemAtPosition(position).toString();
             branch= valueFromSpinner;
         }
-        if(parent.getId() == R.id.branch_spinner2 ){
-            String valueFromSpinner2 = parent.getItemAtPosition(position).toString();
-            batch= valueFromSpinner2;
-        }
+
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
-}
+    }

@@ -4,19 +4,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     tools:context=".fragment.ElecFragment"
-    android:background="#FFD180">
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg"
+    android:orientation="vertical">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/list_item_3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:layout_margin="12dp"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="6dp">
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,7 +18,137 @@
             android:background="#00E676"
             android:textSize="32sp"
             android:textColor="#000000"/>
+    <Button
+        android:id="@+id/name_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:text="HOD"
+        android:background="@drawable/template_bg"
+        android:textColor="#000000" />
 
-    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/name_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:text="Madhavi Pawar | Class-Teacher"
+        android:background="@drawable/template_bg"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/name_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:text="FEMM | FEMM Lab | M.M.Ansari"
+        android:background="@drawable/template_bg"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/name_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:text="AE | C.M.Chaudhari"
+        android:background="@drawable/template_bg"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/name_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:text="ECA | Sarita Bopalkar"
+        android:background="@drawable/template_bg"
+        android:textColor="#000000"  />
+
+    <Button
+        android:id="@+id/name_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:text="EPS-I | Narayan Kharje"
+        android:background="@drawable/template_bg"
+        android:textColor="#000000"  />
+    <Button
+        android:id="@+id/name_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:text="EM-III | Sunanda Raaj"
+        android:background="@drawable/template_bg"
+        android:textColor="#000000"  />
+    <Button
+        android:id="@+id/name_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:text="AEE Lab | Akshata Shettigar"
+        android:background="@drawable/template_bg"
+        android:textColor="#000000"  />
+
+    <Button
+        android:id="@+id/name_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:text="SI-I | C.M.Chaudhari"
+        android:background="@drawable/template_bg"
+        android:textColor="#000000"  />
+
+    <Button
+        android:id="@+id/name_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:text="EI-I | Dnyaneshwar Gote"
+        android:background="@drawable/template_bg"
+        android:textColor="#000000"  />
+
+    <Button
+        android:id="@+id/name_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:text="EM-III | Sunanda Raaj"
+        android:background="@drawable/template_bg"
+        android:textColor="#000000"  />
+
+
+
 
 </LinearLayout>

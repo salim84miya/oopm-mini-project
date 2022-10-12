@@ -14,18 +14,33 @@ public class StandardActivityList extends AppCompatActivity {
         setContentView(R.layout.standard_request_list);
 
         View view1 =(View)findViewById(R.id.list_item_1);
+        View view2 =(View)findViewById(R.id.lost_id_view);
 
         view1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                standardList();
+                LeavingCertificate();
+            }
+        });
+
+        view2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                LostId();
             }
         });
     }
-    public void standardList(){
+    public void LeavingCertificate(){
         Intent intent = new Intent(this, StandardRequestActivity.class);
         startActivity(intent);
     }
+    public void LostId(){
+        Intent intent = new Intent(this, StandardRequestActivity2.class);
+        startActivity(intent);
+    }
+
+
 
 }
