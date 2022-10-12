@@ -54,6 +54,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_gravity="center_horizontal"
                     android:text="standard"
+                    android:textColor="#000000"
                     android:textAllCaps="true"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -91,6 +92,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="16dp"
                     android:text="special"
+                    android:textColor="#000000"
                     android:textAllCaps="true"
                     android:textSize="18sp"
                     android:textStyle="bold" />
