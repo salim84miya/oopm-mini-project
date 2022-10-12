@@ -9,7 +9,7 @@
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/list_item_0"
+        android:id="@+id/comp_item_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_rowWeight="1"
